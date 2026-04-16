@@ -24,17 +24,22 @@
       <span class="text-[2rem] font-bold tracking-widest uppercase">Flux</span>
     </div>
 
-    <!-- https://youtu.be/bW58B6y81y8?t=37789 -->
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="badge">
-        <span class="pulse"></span>
+    <section class="mb-12">
+      <div
+        class="mb-6 inline-flex items-center gap-x-2 rounded-full border border-theme-badge-border bg-theme-badge-background px-4 py-2 text-sm font-medium text-theme-accent-light"
+      >
+        <span class="pulse size-2 rounded-full bg-theme-accent-light"></span>
         Coming Soon
       </div>
-      <h1>Something awesome is brewing.</h1>
-      <p>We're working hard to bring you something special. Be the first to know when we launch.</p>
+      <h1 class="mb-4 text-[clamp(2rem,6vw,3.5rem)] leading-[1.15] font-bold -tracking-[0.02em]">
+        Something awesome is brewing.
+      </h1>
+      <p class="mx-auto max-w-112.5 text-[1.1rem] leading-[1.6] text-theme-text-dim">
+        We're working hard to bring you something special. Be the first to know when we launch.
+      </p>
     </section>
 
+    <!-- https://youtu.be/bW58B6y81y8?t=38088 -->
     <!-- Countdown Section -->
     <section class="countdown">
       <div class="time-block">

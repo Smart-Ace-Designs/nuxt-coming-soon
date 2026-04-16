@@ -7,6 +7,8 @@
   --color-theme-accent: #6366f1;
   --color-theme-accent-light: #818cf8;
   --color-theme-glow: rgba(99, 102, 241, 0.5);
+  --color-theme-badge-background: rgba(99, 102, 241, 0.15);
+  --color-theme-badge-border: rgba(99, 102, 241, 0.3);
 
   --font-sans: "Space Grotesk", sans-serif;
 }
@@ -38,5 +40,20 @@ body {
 
   66% {
     transform: translate(30px, -30px) scale(0.9);
+  }
+}
+
+.pulse {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 var(--color-theme-glow);
+  }
+
+  50% {
+    box-shadow: 0 0 0 10 transparent;
   }
 }
