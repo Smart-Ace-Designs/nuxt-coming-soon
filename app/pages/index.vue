@@ -1,4 +1,7 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const target = new Date("2026-06-19T23:59:59");
+const countdown = useCountdown(target);
+</script>
 
 <template>
   <div class="absolute inset-0 -z-10">
@@ -38,15 +41,20 @@
       </p>
     </section>
 
-    <section class="mb-12 flex items-center justify-center gap-x-4">
-      <AppTimeBlock label="Days" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-      <AppTimeBlock label="Hours" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-      <AppTimeBlock label="Minutes" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-      <AppTimeBlock label="Seconds" />
-    </section>
+    <ClientOnly>
+      <section class="mb-12 flex items-center justify-center gap-x-4">
+        <AppTimeBlock label="Days" :value="countdown.days.value" />
+        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+        <AppTimeBlock label="Hours" :value="countdown.hours.value" />
+        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+        <AppTimeBlock label="Minutes" :value="countdown.minutes.value" />
+        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+        <AppTimeBlock label="Seconds" :value="countdown.seconds.value" />
+      </section>
+      <template #fallback>
+        <div class="mb-12 flex h-25 items-center justify-center">Loading countdown...</div>
+      </template>
+    </ClientOnly>
 
     <!-- https://youtu.be/bW58B6y81y8?t=38279 -->
     <!-- Email Form -->

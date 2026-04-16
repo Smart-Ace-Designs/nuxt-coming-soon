@@ -1,6 +1,7 @@
 <script setup lang="ts">
 defineProps<{
   label: string;
+  value: number;
 }>();
 </script>
 
@@ -11,8 +12,8 @@ defineProps<{
     <span
       class="mb-1 block bg-linear-to-br from-theme-text to-theme-accent-light bg-clip-text text-[2.5rem] font-bold text-transparent"
       id="days"
-      >00</span
-    >
+      >{{ String(value).padStart(2, "0") }}
+    </span>
     <span class="text-xs tracking-widest text-theme-text-dim uppercase">{{ label }}</span>
   </div>
 </template>
