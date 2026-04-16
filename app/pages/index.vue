@@ -1,7 +1,4 @@
-<script setup lang="ts">
-const target = new Date("2026-06-19T23:59:59");
-const { days, hours, minutes, seconds } = useDateCountdown(target);
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div class="absolute inset-0 -z-10">
@@ -19,20 +16,7 @@ const { days, hours, minutes, seconds } = useDateCountdown(target);
   <main class="w-full max-w-162.5 p-8 text-center">
     <AppLogo />
     <AppHeroSection />
-    <ClientOnly>
-      <section class="mb-12 flex items-center justify-center gap-x-4">
-        <AppTimeBlock label="Days" :value="days" />
-        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-        <AppTimeBlock label="Hours" :value="hours" />
-        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-        <AppTimeBlock label="Minutes" :value="minutes" />
-        <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
-        <AppTimeBlock label="Seconds" :value="seconds" />
-      </section>
-      <template #fallback>
-        <div class="mb-12 flex h-25 items-center justify-center">Loading countdown...</div>
-      </template>
-    </ClientOnly>
+    <AppTimeBlockSection />
 
     <!-- https://youtu.be/bW58B6y81y8?t=38279 -->
     <!-- Email Form -->
