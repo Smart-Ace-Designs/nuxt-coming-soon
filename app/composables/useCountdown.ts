@@ -14,6 +14,7 @@ export function useCountdown(target: Date) {
 
     interval = setInterval(() => {
       now.value = new Date();
+      if (diff.value <= 0) clearInterval(interval);
     }, 1000);
   });
 
