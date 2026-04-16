@@ -19,7 +19,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ["@nuxt/fonts"],
+  modules: ["@nuxt/fonts", "@nuxt/icon"],
   fonts: {
     families: [
       {
