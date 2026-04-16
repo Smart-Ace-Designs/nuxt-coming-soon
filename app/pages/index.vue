@@ -1,7 +1,6 @@
 <script setup lang="ts"></script>
 
 <template>
-  <!-- Animated BG -->
   <div class="absolute inset-0 -z-10">
     <div
       class="blob absolute -top-[15%] -left-[10%] size-125 rounded-full bg-linear-to-br from-theme-accent to-[#8b5cf6] opacity-60 blur-[80px]"
@@ -39,33 +38,17 @@
       </p>
     </section>
 
-    <!-- https://youtu.be/bW58B6y81y8?t=38088 -->
-    <!-- Countdown Section -->
-    <section class="countdown">
-      <div class="time-block">
-        <span class="time-value" id="days">00</span>
-        <span class="time-label">Days</span>
-      </div>
-      <span class="separator">:</span>
-
-      <div class="time-block">
-        <span class="time-value" id="hours">00</span>
-        <span class="time-label">Hours</span>
-      </div>
-      <span class="separator">:</span>
-
-      <div class="time-block">
-        <span class="time-value" id="minutes">00</span>
-        <span class="time-label">Minutes</span>
-      </div>
-      <span class="separator">:</span>
-
-      <div class="time-block">
-        <span class="time-value" id="seconds">00</span>
-        <span class="time-label">Seconds</span>
-      </div>
+    <section class="mb-12 flex items-center justify-center gap-x-4">
+      <AppTimeBlock label="Days" />
+      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <AppTimeBlock label="Hours" />
+      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <AppTimeBlock label="Minutes" />
+      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <AppTimeBlock label="Seconds" />
     </section>
 
+    <!-- https://youtu.be/bW58B6y81y8?t=38279 -->
     <!-- Email Form -->
     <form class="email-form" id="email-form">
       <div class="input-group">
