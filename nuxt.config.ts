@@ -5,9 +5,11 @@ export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: false },
   css: ["~/assets/css/main.css"],
+
   vite: {
     plugins: [tailwindcss()],
   },
+
   app: {
     head: {
       htmlAttrs: {
@@ -15,5 +17,20 @@ export default defineNuxtConfig({
       },
       title: "Coming Soon UI",
     },
+  },
+
+  modules: ["@nuxt/fonts"],
+  fonts: {
+    families: [
+      {
+        name: "Space Grotesk",
+        provider: "google",
+        weights: [400, 700],
+        styles: ["normal"],
+        subsets: ["latin"],
+        preload: true,
+        display: "swap",
+      },
+    ],
   },
 });
