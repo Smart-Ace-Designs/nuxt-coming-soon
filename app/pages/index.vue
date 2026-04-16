@@ -26,20 +26,7 @@ const { days, hours, minutes, seconds } = useCountdown(target);
       <span class="text-[2rem] font-bold tracking-widest uppercase">Flux</span>
     </div>
 
-    <section class="mb-12">
-      <div
-        class="mb-6 inline-flex items-center gap-x-2 rounded-full border border-theme-badge-border bg-theme-badge-background px-4 py-2 text-sm font-medium text-theme-accent-light"
-      >
-        <span class="pulse size-2 rounded-full bg-theme-accent-light"></span>
-        Coming Soon
-      </div>
-      <h1 class="mb-4 text-[clamp(2rem,6vw,3.5rem)] leading-[1.15] font-bold -tracking-[0.02em]">
-        Something awesome is brewing.
-      </h1>
-      <p class="mx-auto max-w-112.5 text-[1.1rem] leading-[1.6] text-theme-text-dim">
-        We're working hard to bring you something special. Be the first to know when we launch.
-      </p>
-    </section>
+    <AppHeroSection />
 
     <ClientOnly>
       <section class="mb-12 flex items-center justify-center gap-x-4">
@@ -59,9 +46,18 @@ const { days, hours, minutes, seconds } = useCountdown(target);
     <!-- https://youtu.be/bW58B6y81y8?t=38279 -->
     <!-- Email Form -->
     <form class="email-form" id="email-form">
-      <div class="input-group">
-        <Icon name="fa6-solid:envelope"></Icon>
-        <input type="email" name="email" id="email" placeholder="Enter your email" />
+      <div class="relative mb-4">
+        <Icon
+          name="fa6-solid:envelope"
+          class="absolute top-1/2 left-3 -translate-y-1/2 text-theme-text"
+        ></Icon>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email"
+          class="w-full rounded-lg border p-[0.85rem] pl-10 text-[1rem] transition-all duration-300 focus:outline-none"
+        />
       </div>
       <button type="submit">
         Notify Me
