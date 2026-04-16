@@ -2,22 +2,29 @@
 
 <template>
   <!-- Animated BG -->
-  <div class="bg">
-    <div class="blob blob-1"></div>
-    <div class="blob blob-2"></div>
-    <div class="blob blob-3"></div>
+  <div class="absolute inset-0 -z-10">
+    <div
+      class="blob absolute -top-[15%] -left-[10%] size-125 rounded-full bg-linear-to-br from-theme-accent to-[#8b5cf6] opacity-60 blur-[80px]"
+    ></div>
+    <div
+      class="blob-2 blob absolute -right-[10%] -bottom-[10%] size-100 rounded-full bg-linear-to-br from-[#ec4489] to-[#8b5cf6] opacity-60 blur-[80px]"
+    ></div>
+    <div
+      class="blob-3 blob absolute top-1/2 left-1/2 size-75 rounded-full bg-linear-to-br from-[#06b6d4] to-theme-accent opacity-60 blur-[80px]"
+    ></div>
   </div>
 
-  <!-- Main Content -->
-  <main class="container">
-    <!-- Logo -->
-    <div class="logo">
-      <div class="logo-icon">
+  <main class="w-full max-w-162.5 p-8 text-center">
+    <div class="mb-12 flex items-center justify-center gap-x-3">
+      <div
+        class="flex size-12 items-center justify-center rounded-[14px] bg-linear-to-br from-theme-accent to-theme-accent-light text-xl"
+      >
         <Icon name="fa6-solid:bolt"></Icon>
       </div>
-      <span>Flux</span>
+      <span class="text-[2rem] font-bold tracking-widest uppercase">Flux</span>
     </div>
 
+    <!-- https://youtu.be/bW58B6y81y8?t=37789 -->
     <!-- Hero Section -->
     <section class="hero">
       <div class="badge">

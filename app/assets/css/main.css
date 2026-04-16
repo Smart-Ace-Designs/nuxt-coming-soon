@@ -1,5 +1,42 @@
 @import "tailwindcss";
 
 @theme {
+  --color-theme-background: #050505;
+  --color-theme-text: #ffffff;
+  --color-theme-text-dim: #8a8a8a;
+  --color-theme-accent: #6366f1;
+  --color-theme-accent-light: #818cf8;
+  --color-theme-glow: rgba(99, 102, 241, 0.5);
+
   --font-sans: "Space Grotesk", sans-serif;
+}
+
+body {
+  @apply flex min-h-dvh items-center justify-center overflow-hidden bg-theme-background text-theme-text;
+}
+
+.blob {
+  animation: float 15s ease-in-out infinite;
+}
+
+.blob-2 {
+  animation-delay: -7s;
+}
+
+.blob-3 {
+  animation-delay: -10s;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(50px, -50px) scale(1.1);
+  }
+
+  66% {
+    transform: translate(30px, -30px) scale(0.9);
+  }
 }
