@@ -1,6 +1,6 @@
 <script setup lang="ts">
 const target = new Date("2026-06-19T23:59:59");
-const { days, hours, minutes, seconds } = useCountdown(target);
+const { days, hours, minutes, seconds } = useDateCountdown(target);
 </script>
 
 <template>
