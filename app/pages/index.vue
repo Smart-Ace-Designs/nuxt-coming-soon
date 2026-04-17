@@ -17,28 +17,7 @@
     <AppLogo />
     <AppHeroSection />
     <AppTimeBlockSection />
-
-    <!-- https://youtu.be/bW58B6y81y8?t=38279 -->
-    <!-- Email Form -->
-    <form class="email-form" id="email-form">
-      <div class="relative mb-4">
-        <Icon
-          name="fa6-solid:envelope"
-          class="absolute top-1/2 left-3 -translate-y-1/2 text-theme-text"
-        ></Icon>
-        <input
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email"
-          class="w-full rounded-lg border p-[0.85rem] pl-10 text-[1rem] transition-all duration-300 focus:outline-none"
-        />
-      </div>
-      <button type="submit">
-        Notify Me
-        <Icon name="fa6-solid:arrow-right"></Icon>
-      </button>
-    </form>
+    <AppEmailForm />
 
     <!-- Success Message -->
     <div class="success-message hidden" id="success">
