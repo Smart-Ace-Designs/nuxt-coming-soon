@@ -19,12 +19,7 @@
     <AppTimeBlockSection />
     <AppEmailForm />
 
-    <!-- Success Message -->
-    <div class="success-message hidden" id="success">
-      <Icon name="fa6-solid:circle-check"></Icon>
-      <span>You're on the list! We'll notify you when we launch.</span>
-    </div>
-
+    <!-- https://youtu.be/bW58B6y81y8?t=38778 -->
     <!-- Social Links -->
     <div class="socials">
       <a href="#">

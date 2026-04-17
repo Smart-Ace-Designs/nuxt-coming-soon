@@ -22,4 +22,12 @@
       <Icon name="fa6-solid:arrow-right"></Icon>
     </button>
   </form>
+
+  <div
+    class="success-message mx-auto mb-6 flex max-w-112.5 items-center justify-center gap-x-3 rounded-xl border border-[rgba(32,197,94,0.3)] bg-[rgba(34,197,94,0.15)] px-6 py-4 font-medium text-[#4ade80]"
+    id="success"
+  >
+    <Icon name="fa6-solid:circle-check" class="text-xl"></Icon>
+    <span>You're on the list! We'll notify you when we launch.</span>
+  </div>
 </template>
