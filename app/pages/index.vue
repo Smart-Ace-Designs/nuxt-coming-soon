@@ -18,15 +18,6 @@
     <AppHeroSection />
     <AppTimeBlockSection />
     <AppEmailForm />
-
-    <!-- https://youtu.be/bW58B6y81y8?t=38778 -->
-    <!-- Social Links -->
-    <div class="socials">
-      <a href="#">
-        <Icon name="fa6-brands:x-twitter"></Icon>
-        <Icon name="fa6-brands:instagram"></Icon>
-        <Icon name="fa6-brands:discord"></Icon>
-      </a>
-    </div>
+    <AppSocialLinks />
   </main>
 </template>
