@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="mb-12 flex items-center justify-center gap-x-3">
+  <div class="mb-6 flex items-center justify-center gap-x-3 sm:mb-12">
     <div
       class="flex size-12 items-center justify-center rounded-[14px] bg-linear-to-br from-theme-accent to-theme-accent-light text-xl"
     >

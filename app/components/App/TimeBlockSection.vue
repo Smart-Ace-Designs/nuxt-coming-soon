@@ -5,13 +5,13 @@ const { days, hours, minutes, seconds } = useDateCountdown(target);
 
 <template>
   <ClientOnly>
-    <section class="mb-12 flex items-center justify-center gap-x-4">
+    <section class="mb-12 flex items-center justify-center gap-x-2 sm:gap-x-4">
       <AppTimeBlock label="Days" :value="days" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <span class="text-[1.5rem] font-bold text-theme-text-dim/50 sm:text-[2rem]">:</span>
       <AppTimeBlock label="Hours" :value="hours" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <span class="text-[1.5rem] font-bold text-theme-text-dim/50 sm:text-[2rem]">:</span>
       <AppTimeBlock label="Minutes" :value="minutes" />
-      <span class="text-[2rem] font-bold text-theme-text-dim/50">:</span>
+      <span class="text-[1.5rem] font-bold text-theme-text-dim/50 sm:text-[2rem]">:</span>
       <AppTimeBlock label="Seconds" :value="seconds" />
     </section>
     <template #fallback>

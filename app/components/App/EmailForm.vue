@@ -16,7 +16,7 @@ function validateEmail() {
 
 <template>
   <form
-    class="mx-auto max-w-112.5 gap-x-3"
+    class="mx-auto max-w-112.5 flex-col gap-x-3 gap-y-3 sm:flex-row"
     :class="success ? 'hidden' : 'flex'"
     id="email-form"
     @submit.prevent="validateEmail"
@@ -39,14 +39,14 @@ function validateEmail() {
         />
       </div>
 
-      <p :class="error ? 'visible' : 'invisible'" class="mt-2 text-left text-sm text-red-400">
+      <p :class="error ? 'visible m-2' : 'invisible m-0'" class="text-left text-sm text-red-400">
         Please provide a valid email address.
       </p>
     </div>
 
     <button
       type="submit"
-      class="flex cursor-pointer items-center gap-x-2 self-start rounded-xl border-none bg-linear-to-br from-theme-accent to-[#4f46e5] px-6 py-4 font-semibold whitespace-nowrap text-theme-text transition hover:text-theme-text/85 hover:shadow-2xl"
+      class="flex cursor-pointer items-center justify-center gap-x-2 rounded-xl border-none bg-linear-to-br from-theme-accent to-[#4f46e5] px-6 py-4 font-semibold whitespace-nowrap text-theme-text transition hover:text-theme-text/85 hover:shadow-2xl sm:self-start"
     >
       Notify Me
       <Icon name="fa6-solid:arrow-right"></Icon>
