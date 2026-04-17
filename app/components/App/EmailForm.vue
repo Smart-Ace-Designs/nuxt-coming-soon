@@ -39,7 +39,7 @@ function validateEmail() {
         />
       </div>
 
-      <p :class="error ? 'visible' : 'invisible'" class="mt-2 text-left text-sm text-red-500">
+      <p :class="error ? 'visible' : 'invisible'" class="mt-2 text-left text-sm text-red-400">
         Please provide a valid email address.
       </p>
     </div>
