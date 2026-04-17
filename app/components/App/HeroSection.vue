@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <section class="mb-12">
     <div

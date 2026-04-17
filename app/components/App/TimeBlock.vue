@@ -11,7 +11,6 @@ defineProps<{
   >
     <span
       class="mb-1 block bg-linear-to-br from-theme-text to-theme-accent-light bg-clip-text text-[1.75rem] font-bold text-transparent sm:text-[2.5rem]"
-      id="days"
       >{{ String(value).padStart(2, "0") }}
     </span>
     <span class="text-xs tracking-widest text-theme-text-dim uppercase">{{ label }}</span>

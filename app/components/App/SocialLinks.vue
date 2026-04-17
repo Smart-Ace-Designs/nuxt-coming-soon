@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="mt-8 flex justify-center gap-x-4 sm:mt-3">
     <a

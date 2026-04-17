@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="mb-6 flex items-center justify-center gap-x-3 sm:mb-12">
     <div
