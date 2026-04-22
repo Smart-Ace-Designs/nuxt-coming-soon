@@ -7,7 +7,7 @@ export function useDateCountdown(target: Date) {
   const minutes = computed(() => Math.floor((diff.value / (1000 * 60)) % 60));
   const seconds = computed(() => Math.floor((diff.value / 1000) % 60));
 
-  let interval: number | null = null; // Proper typing
+  let interval: number | null = null;
 
   const cleanup = () => {
     if (interval !== null) {

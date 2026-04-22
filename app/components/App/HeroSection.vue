@@ -6,7 +6,7 @@
       <span class="pulse size-2 rounded-full bg-theme-accent-light"></span>
       Coming Soon
     </div>
-    <h1 class="mb-4 text-[clamp(2rem,6vw,3.5rem)] leading-[1.15] font-bold -tracking-[0.02em]">
+    <h1 class="mb-4 text-[clamp(2rem,6vw,3.5rem)] leading-[1.15] font-bold tracking-[-0.02em]">
       Something awesome is brewing.
     </h1>
     <p class="mx-auto max-w-112.5 text-[1.1rem] leading-[1.6] text-theme-text-dim">
